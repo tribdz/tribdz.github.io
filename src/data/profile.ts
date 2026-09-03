@@ -26,7 +26,7 @@ export const profile = {
     {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/quoc-hung-nham/',
-      ariaLabel: 'Open Nham Quoc Hung LinkedIn profile',
+      ariaLabel: 'Open Nham Quoc Hung LinkedIn',
     },
     {
       label: 'Email',
