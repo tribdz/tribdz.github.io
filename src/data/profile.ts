@@ -16,7 +16,7 @@ export const profile = {
     ariaLabel: 'Download Tran Tri Binh resume PDF',
   },
   summary:
-    'I am a Computer Science graduate with a specialisation in Data and passion for teaching. In a world being increasingly influenced and shaped by technological advances, these domains are my way of navigating through present complexities and making sense of what is coming next.',
+    'am a Computer Science graduate with a specialisation in Data and passion for teaching. In a world being increasingly influenced and shaped by technological advances, these domains are my way of navigating through present complexities and making sense of what is coming next.',
   socialLinks: [
     {
       label: 'GitHub',
