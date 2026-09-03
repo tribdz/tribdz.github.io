@@ -16,7 +16,7 @@ export const profile = {
     ariaLabel: 'Download Tran Tri Binh resume PDF',
   },
   summary:
-    'My name is Tran Tri Binh.',
+    'My name is Tran Tri Binh and I love gaming.',
   socialLinks: [
     {
       label: 'GitHub',
