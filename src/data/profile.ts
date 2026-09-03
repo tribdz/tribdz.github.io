@@ -3,25 +3,25 @@ import resumePdf from '../assets/documents/resume.pdf'
 import type { HeroSection, Profile } from '../types/portfolio'
 
 export const profile = {
-  name: 'Nham Quoc Hung',
-  slug: 'nham-quoc-hung',
+  name: 'Tran Tri Binh',
+  slug: 'tran-tri-binh',
   role: 'Data Engineer at Torilab Inc.',
   location: 'Hanoi Capital Region, Vietnam',
-  email: 'nhamhung.gttn@gmail.com',
+  email: 'trantribinh2021@gmail.com',
   profileImage,
   resume: {
     label: 'Download Resume',
     href: resumePdf,
-    fileName: 'Nham-Quoc-Hung-Resume.pdf',
-    ariaLabel: 'Download Nham Quoc Hung resume PDF',
+    fileName: 'Tran-Tri-Binh-Resume.pdf',
+    ariaLabel: 'Download Tran Tri Binh resume PDF',
   },
   summary:
     'I am a Computer Science graduate with a specialisation in Data and passion for teaching. In a world being increasingly influenced and shaped by technological advances, these domains are my way of navigating through present complexities and making sense of what is coming next.',
   socialLinks: [
     {
       label: 'GitHub',
-      href: 'https://github.com/nhamhung',
-      ariaLabel: 'Open Nham Quoc Hung GitHub profile',
+      href: 'https://github.com/tribdz',
+      ariaLabel: 'Open Tran Tri Binh GitHub profile',
     },
     {
       label: 'LinkedIn',
