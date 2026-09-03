@@ -1,4 +1,4 @@
-import profileImage from '../assets/profile.jpeg'
+import profileImage from '../assets/profile.jpg'
 import resumePdf from '../assets/documents/resume.pdf'
 import type { HeroSection, Profile } from '../types/portfolio'
 
