@@ -5,7 +5,7 @@ import type { HeroSection, Profile } from '../types/portfolio'
 export const profile = {
   name: 'Tran Tri Binh',
   slug: 'tran-tri-binh',
-  role: 'Data Engineer at Torilab Inc.',
+  role: '7th Grade Student',
   location: 'Hanoi Capital Region, Vietnam',
   email: 'trantribinh2021@gmail.com',
   profileImage,
