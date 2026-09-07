@@ -18,6 +18,8 @@ workflows:
       - name: Build Kivy for iOS
         script: |
           source venv/bin/activate
+          pip install Cython
+          brew install automake
           toolchain build kivy
 
       - name: Create Xcode project
