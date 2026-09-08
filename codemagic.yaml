@@ -25,13 +25,18 @@ workflows:
       - name: Create Xcode project
         script: |
           source venv/bin/activate
-          toolchain create QuanLyThuChi "$CM_BUILD_DIR"
+
+          mkdir -p "$CM_BUILD_DIR/kivy_app"
+          cp "$CM_BUILD_DIR/main.py" "$CM_BUILD_DIR/kivy_app/main.py"
+
+          toolchain create QuanLyThuChi "$CM_BUILD_DIR/kivy_app"
 
       - name: Build iOS app
         script: |
           cd "$CM_BUILD_DIR/QuanLyThuChi-ios"
+
           xcodebuild \
-            -project "QuanLyThuChi.xcodeproj" \
+            -project "quanlythuchi.xcodeproj" \
             -scheme "quanlythuchi" \
             -sdk iphoneos \
             -configuration Release \
