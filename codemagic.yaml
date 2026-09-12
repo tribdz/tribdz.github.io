@@ -43,6 +43,20 @@ workflows:
             CODE_SIGNING_ALLOWED=NO \
             build
 
+      - name: Package IPA
+        script: |
+          APP_PATH=$(find "$HOME/Library/Developer/Xcode/DerivedData" \
+            -path "*/Build/Products/Release-iphoneos/quanlythuchi.app" \
+            -type d | head -1)
+
+          echo "Found app at: $APP_PATH"
+
+          mkdir -p "$CM_BUILD_DIR/Payload"
+          cp -R "$APP_PATH" "$CM_BUILD_DIR/Payload/"
+
+          cd "$CM_BUILD_DIR"
+          zip -r QuanLyThuChi.ipa Payload
+
     artifacts:
-      - "$HOME/Library/Developer/Xcode/DerivedData/**/*.app"
+      - "$CM_BUILD_DIR/QuanLyThuChi.ipa"
       - /tmp/xcodebuild_logs/*.log
